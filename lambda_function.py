@@ -43,7 +43,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         if "messages" not in session_attributes:
             session_attributes["messages"] = []
 
-        speech_text = "Cuéntame."
+        speech_text = "hola, estoy aqui para asistirte,como puedo ayudarte."
         return (
             handler_input.response_builder
                 .speak(speech_text)
