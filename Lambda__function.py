@@ -43,7 +43,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         session_attributes = handler_input.attributes_manager.session_attributes
         session_attributes["messages"] = []  # Inicializar historial de mensajes
-        speech_text = "¡Hola! Estoy aquí para responder tus preguntas. ¿Qué te gustaría saber?"
+        speech_text = "Hola, soy hamakan, Estoy aquí para responder tus preguntas. ¿Qué te gustaría saber?"
         return handler_input.response_builder.speak(speech_text).ask(speech_text).response
 
 class GeneralQueryIntentHandler(AbstractRequestHandler):
